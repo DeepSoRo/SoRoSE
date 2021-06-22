@@ -5,19 +5,14 @@ An increasing number of robots are made of soft materials. Because they are inhe
 with, soft robots have been widely used in human-robot interactions. Moreover, due to their flexibility, 
 they adapt to their environment, requiring less precision in certain tasks like grasp planning.
 
-Nonetheless, soft robotic state estimation has its unique challenges. In general, soft robots are underac-
-tuated and have infinitely many degrees of freedom. They undergo large deformations and hence display 
+Nonetheless, soft robotic state estimation has its unique challenges. In general, soft robots are underactuated and have infinitely many degrees of freedom. They undergo large deformations and hence display 
 a highly nonlinear hyperelastic behaviour. Furthermore, because many applications involve contact, we 
 require state estimation algorithms to scale well and perform robustly in contact-rich interactions with 
 humans or environments. To balance precision and timing requirements, novel proprioceptive sensing 
-and Modeling are needed to estimate a soft robot’s state efficiently and effectively. Real-time state esti-
-mation also paves the way towards closed-loop control of soft robots.
+and Modeling are needed to estimate a soft robot’s state efficiently and effectively. Real-time state estimation also paves the way towards closed-loop control of soft robots.
 
-This workshop aims to exchange new knowledge, discover inspiring trends, and advance integrated soft-
-ware and hardware techniques for soft robot sensing and the estimation of their internal states, such as 
-geometric shape and properties, strain- and stress-related quantities in quasi-static settings, and veloci-
-ties and accelerations in dynamic settings. Our goal is to connect communities and stimulate collab-
-orative research.
+This workshop aims to exchange new knowledge, discover inspiring trends, and advance integrated software and hardware techniques for soft robot sensing and the estimation of their internal states, such as 
+geometric shape and properties, strain- and stress-related quantities in quasi-static settings, and velocities and accelerations in dynamic settings. Our goal is to connect communities and stimulate collaborative research.
 
 ## Invited Speakers
 + Edward H. Adelson, MIT, (Tactile Sensing, Learning-based Sensing) 
