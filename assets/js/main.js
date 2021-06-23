@@ -34,9 +34,9 @@
 
   $window.on("load", function () {
     if (browser.mobile) {
-      $(".organizers#speakers").css("display", "none");
+      $(".organizers#speakers1").css("display", "none");
     } else {
-      $(".speakers#speakers").css("display", "none");
+      $(".speakers#speakers2").css("display", "none");
       $(".carousel").css("display", "none");
     }
   });
