@@ -2491,9 +2491,14 @@ body.homepage.is-preload #header:after {
 .carousel article p {
   text-align: center;
 }
+#organizers section .row {
+  display: flex;
+  justify-content: center;
+}
 
 #organizers section .row > * {
   padding: 0px 4px;
+  max-width: 18em;
 }
 
 #organizers article .image {
@@ -2512,6 +2517,7 @@ body.homepage.is-preload #header:after {
 
 #organizers article p {
   text-align: center;
+  max-width: 100%;
 }
 
 /* Wide */
