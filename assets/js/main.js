@@ -164,22 +164,21 @@
     $window.on("load", function () {
       reelWidth = $reel[0].scrollWidth;
 
-      //   if (browser.mobile) {
-      //     $reel
-      //       .css("overflow-y", "hidden")
-      //       .css("overflow-x", "scroll")
-      //       .scrollLeft(0);
-      //     $forward.hide();
-      //     $backward.hide();
-      //   } else {
-      //     $reel.css("overflow", "visible").scrollLeft(0);
-      //     $forward.show();
-      //     $backward.show();
-      //   }
+      if (browser.mobile) {
+        $t.css("overflow-y", "hidden")
+          .css("overflow-x", "scroll")
+          .scrollLeft(0);
+        $forward.hide();
+        $backward.hide();
+      } else {
+        $reel.css("overflow", "visible").scrollLeft(0);
+        $forward.show();
+        $backward.show();
+      }
 
-      $reel.css("overflow", "visible").scrollLeft(0);
-      $forward.show();
-      $backward.show();
+      //   $reel.css("overflow", "visible").scrollLeft(0);
+      //   $forward.show();
+      //   $backward.show();
 
       $t._update();
 
