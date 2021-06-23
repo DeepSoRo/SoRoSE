@@ -32,6 +32,15 @@
     }, 100);
   });
 
+  $window.on("load", function () {
+    if (browser.mobile) {
+      $(".organizers#speakers").css("display", "none");
+    } else {
+      $(".speakers#speakers").css("display", "none");
+      $(".carousel").css("display", "none");
+    }
+  });
+
   // Dropdowns.
   $("#nav > ul").dropotron({
     mode: "fade",
