@@ -11,7 +11,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
 </head>
 
 <body class="no-sidebar is-preload">
@@ -25,7 +27,8 @@
                 <header>
                     <h1><a href="index.html" id="logo">SoRoSE: Soft Robot State Estimation</a></h1>
                     <br />
-                    <h2><a href="https://www.iros2021.org/workshops" id="logo">IROS'2021 workshop</a></h2>
+                    <h2><a href="https://www.iros2021.org/workshops" id="logo">IROS'2021
+                            workshop</a></h2>
                 </header>
             </div>
 
@@ -50,22 +53,75 @@
                     <header>
                         <h2>Abstract</h2>
                     </header>
-                    <div style="display:flex; justify-content: center;">
-                        <img src="images/thumb_400.jpg"/>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 5</div>
+                            <img src="images/thumb_400.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 5</div>
+                            <img src="images/deepsoro.png" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 5</div>
+                            <img src="images/BarInteraction4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 5</div>
+                            <img src="images/sensor_in_gripper.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 5</div>
+                            <img src="images/robot2.jpg" style="width:100%">
+                        </div>
+
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+
                     </div>
                     <br />
                     <p>
-                        An increasing number of robots are made of soft materials. Because they are inherently safe to interact with, soft robots have been widely used in human-robot interactions. Moreover, due to their flexibility, they adapt to their environment, requiring
+                        An increasing number of robots are made of soft materials. Because they are inherently safe to
+                        interact with, soft robots have been widely used in human-robot interactions. Moreover, due to
+                        their flexibility, they adapt to their environment, requiring
                         less precision in certain tasks like grasp planning.
                     </p>
                     <p>
-                        Nonetheless, soft robotic state estimation has its unique challenges. In general, soft robots are underactuated and have infinitely many degrees of freedom. They undergo large deformations and hence display a highly nonlinear hyperelastic behaviour. Furthermore,
-                        because many applications involve contact, we require state estimation algorithms to scale well and perform robustly in contact-rich interactions with humans or environments. To balance precision and timing requirements, novel
-                        proprioceptive sensing and Modeling are needed to estimate a soft robot’s state efficiently and effectively. Real-time state estimation also paves the way towards closed-loop control of soft robots.
+                        Nonetheless, soft robotic state estimation has its unique challenges. In general, soft robots
+                        are underactuated and have infinitely many degrees of freedom. They undergo large deformations
+                        and hence display a highly nonlinear hyperelastic behaviour. Furthermore,
+                        because many applications involve contact, we require state estimation algorithms to scale well
+                        and perform robustly in contact-rich interactions with humans or environments. To balance
+                        precision and timing requirements, novel
+                        proprioceptive sensing and Modeling are needed to estimate a soft robot’s state efficiently and
+                        effectively. Real-time state estimation also paves the way towards closed-loop control of soft
+                        robots.
                     </p>
                     <p>
-                        This workshop aims to exchange new knowledge, discover inspiring trends, and advance integrated software and hardware techniques for soft robot sensing and the estimation of their internal states, such as geometric shape and properties, strain- and stress-related
-                        quantities in quasi-static settings, and velocities and accelerations in dynamic settings. Our goal is to connect communities and stimulate collaborative research.
+                        This workshop aims to exchange new knowledge, discover inspiring trends, and advance integrated
+                        software and hardware techniques for soft robot sensing and the estimation of their internal
+                        states, such as geometric shape and properties, strain- and stress-related
+                        quantities in quasi-static settings, and velocities and accelerations in dynamic settings. Our
+                        goal is to connect communities and stimulate collaborative research.
                     </p>
                 </article>
             </div>
@@ -85,7 +141,8 @@
         <section class="carousel">
             <div class="reel">
                 <article>
-                    <a href="http://persci.mit.edu/people/adelson" class="image featured"><img src="images/Edward H. Adelson.jpeg" alt="" /></a>
+                    <a href="http://persci.mit.edu/people/adelson" class="image featured"><img
+                            src="images/Edward H. Adelson.jpeg" alt="" /></a>
                     <header>
                         <h3>
                             <a href="http://persci.mit.edu/people/adelson"></a>Edward H. Adelson</a>
@@ -97,31 +154,37 @@
                     <p>Tactile Sensing, Learning-based Sensing</p>
                 </article>
                 <article>
-                    <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd" class="image featured"><img src="images/Robert Shepherd.jpeg" alt="" /></a>
+                    <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"
+                        class="image featured"><img src="images/Robert Shepherd.jpeg" alt="" /></a>
                     <header>
                         <h3>
-                            <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Robert Shepherd</a>
+                            <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Robert
+                            Shepherd</a>
                         </h3>
                         <h3>
-                            <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Cornell University</a>
+                            <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Cornell
+                            University</a>
                         </h3>
                     </header>
                     <p>Soft Robotics and Soft Sensors</p>
                 </article>
                 <article>
-                    <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/" class="image featured"><img src="images/Oliver Brock.jpeg" alt="" /></a>
+                    <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/" class="image featured"><img
+                            src="images/Oliver Brock.jpeg" alt="" /></a>
                     <header>
                         <h3>
                             <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Oliver Brock</a>
                         </h3>
                         <h3>
-                            <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Technische Universität Berlin</a>
+                            <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Technische
+                            Universität Berlin</a>
                         </h3>
                     </header>
                     <p>Biology-Inspired & Learning-based Robotics</p>
                 </article>
                 <article>
-                    <a href="https://cims.nyu.edu/gcl/daniele.html" class="image featured"><img src="images/Daniele Panozzo.jpeg" alt="" /></a>
+                    <a href="https://cims.nyu.edu/gcl/daniele.html" class="image featured"><img
+                            src="images/Daniele Panozzo.jpeg" alt="" /></a>
                     <header>
                         <h3>
                             <a href="https://cims.nyu.edu/gcl/daniele.html"></a>Daniele Panozzo</a>
@@ -133,19 +196,25 @@
                     <p>Graphics & Simulation for Soft Robotics</p>
                 </article>
                 <article>
-                    <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio" class="image featured"><img src="images/Rebecca Kramer-Bottiglio.jpeg" alt="" /></a>
+                    <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"
+                        class="image featured"><img src="images/Rebecca Kramer-Bottiglio.jpeg" alt="" /></a>
                     <header>
                         <h3>
-                            <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Rebecca Kramer-Bottiglio</a>
+                            <a
+                                href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Rebecca
+                            Kramer-Bottiglio</a>
                         </h3>
                         <h3>
-                            <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Yale University</a>
+                            <a
+                                href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Yale
+                            University</a>
                         </h3>
                     </header>
                     <p>Soft Robotics, Multifunctional Materials</p>
                 </article>
                 <article>
-                    <a href="http://mslab.es/otaduy/" class="image featured"><img src="images/Miguel Otaduy.jpeg" alt="" /></a>
+                    <a href="http://mslab.es/otaduy/" class="image featured"><img src="images/Miguel Otaduy.jpeg"
+                            alt="" /></a>
                     <header>
                         <h3>
                             <a href="http://mslab.es/otaduy/"></a>Miguel Otaduy</a>
@@ -157,7 +226,8 @@
                     <p>Soft Body Simulation, Contact Modeling</p>
                 </article>
                 <article>
-                    <a href="https://tolley.eng.ucsd.edu/" class="image featured"><img src="images/Mike Tolley.jpeg" alt="" /></a>
+                    <a href="https://tolley.eng.ucsd.edu/" class="image featured"><img src="images/Mike Tolley.jpeg"
+                            alt="" /></a>
                     <header>
                         <h3>
                             <a href="https://tolley.eng.ucsd.edu/"></a>Mike Tolley</a>
@@ -183,7 +253,8 @@
                 </article>
                 <div class="row" style="margin-left: 0px;">
                     <article>
-                        <a href="http://persci.mit.edu/people/adelson" class="image featured"><img src="images/Edward H. Adelson.jpeg" alt="" /></a>
+                        <a href="http://persci.mit.edu/people/adelson" class="image featured"><img
+                                src="images/Edward H. Adelson.jpeg" alt="" /></a>
                         <header>
                             <h3>
                                 <a href="http://persci.mit.edu/people/adelson"></a>Edward H. Adelson</a>
@@ -195,31 +266,38 @@
                         <p>Tactile Sensing, Learning-based Sensing</p>
                     </article>
                     <article>
-                        <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd" class="image featured"><img src="images/Robert Shepherd.jpeg" alt="" /></a>
+                        <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"
+                            class="image featured"><img src="images/Robert Shepherd.jpeg" alt="" /></a>
                         <header>
                             <h3>
-                                <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Robert Shepherd</a>
+                                <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Robert
+                                Shepherd</a>
                             </h3>
                             <h3>
-                                <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Cornell University</a>
+                                <a href="https://www.mae.cornell.edu/faculty-directory/robert-f-shepherd"></a>Cornell
+                                University</a>
                             </h3>
                         </header>
                         <p>Soft Robotics and Soft Sensors</p>
                     </article>
                     <article>
-                        <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/" class="image featured"><img src="images/Oliver Brock.jpeg" alt="" /></a>
+                        <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/" class="image featured"><img
+                                src="images/Oliver Brock.jpeg" alt="" /></a>
                         <header>
                             <h3>
-                                <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Oliver Brock</a>
+                                <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Oliver
+                                Brock</a>
                             </h3>
                             <h3>
-                                <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Technische Universität Berlin</a>
+                                <a href="https://www.robotics.tu-berlin.de/menue/team/oliver_brock/"></a>Technische
+                                Universität Berlin</a>
                             </h3>
                         </header>
                         <p>Biology-Inspired & Learning-based Robotics</p>
                     </article>
                     <article>
-                        <a href="https://cims.nyu.edu/gcl/daniele.html" class="image featured"><img src="images/Daniele Panozzo.jpeg" alt="" /></a>
+                        <a href="https://cims.nyu.edu/gcl/daniele.html" class="image featured"><img
+                                src="images/Daniele Panozzo.jpeg" alt="" /></a>
                         <header>
                             <h3>
                                 <a href="https://cims.nyu.edu/gcl/daniele.html"></a>Daniele Panozzo</a>
@@ -231,19 +309,25 @@
                         <p>Graphics & Simulation for Soft Robotics</p>
                     </article>
                     <article>
-                        <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio" class="image featured"><img src="images/Rebecca Kramer-Bottiglio.jpeg" alt="" /></a>
+                        <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"
+                            class="image featured"><img src="images/Rebecca Kramer-Bottiglio.jpeg" alt="" /></a>
                         <header>
                             <h3>
-                                <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Rebecca Kramer-Bottiglio</a>
+                                <a
+                                    href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Rebecca
+                                Kramer-Bottiglio</a>
                             </h3>
                             <h3>
-                                <a href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Yale University</a>
+                                <a
+                                    href="https://seas.yale.edu/faculty-research/faculty-directory/rebecca-kramer-bottiglio"></a>Yale
+                                University</a>
                             </h3>
                         </header>
                         <p>Soft Robotics, Multifunctional Materials</p>
                     </article>
                     <article>
-                        <a href="http://mslab.es/otaduy/" class="image featured"><img src="images/Miguel Otaduy.jpeg" alt="" /></a>
+                        <a href="http://mslab.es/otaduy/" class="image featured"><img src="images/Miguel Otaduy.jpeg"
+                                alt="" /></a>
                         <header>
                             <h3>
                                 <a href="http://mslab.es/otaduy/"></a>Miguel Otaduy</a>
@@ -252,10 +336,11 @@
                                 <a href="http://mslab.es/otaduy/"></a>Universidad Rey Juan Carlos</a>
                             </h3>
                         </header>
-                        <p>Soft Body Simulation, Contact Modeling</p>
+                        <p>Soft Body Simulation, Model-based Optimization</p>
                     </article>
                     <article>
-                        <a href="https://tolley.eng.ucsd.edu/" class="image featured"><img src="images/Mike Tolley.jpeg" alt="" /></a>
+                        <a href="https://tolley.eng.ucsd.edu/" class="image featured"><img src="images/Mike Tolley.jpeg"
+                                alt="" /></a>
                         <header>
                             <h3>
                                 <a href="https://tolley.eng.ucsd.edu/"></a>Mike Tolley</a>
@@ -272,34 +357,70 @@
         </div>
 
         <div class="wrapper style1" id="submission">
-            <div class="container">
+            <div class="container" style="max-width: 800px;">
                 <article id="main" class="special">
                     <header>
                         <h2>Extended Abstract Submission
                         </h2>
                     </header>
                     <p>
-                        We invite researchers working on related topics to submit abstracts or extended abstracts (no longer than 4 pages in IROS paper format, including references) that can contribute to this workshop.
+                        We invite researchers working on related topics to submit abstracts or extended abstracts (no
+                        longer than 4 pages in IROS paper format, including references) that can contribute to this
+                        workshop.
                     </p>
                     <p>
                         Desired Works could:
                     </p>
                     <ul>
-                        <li>identify novel state estimation theories and algorithms for robots with parts made of soft materials,</li>
-                        <li>discuss state estimation in the context of applications in soft robotics, human-robot interaction, or wearable devices,</li>
-                        <li>demonstrate real-time state estimation with limited precision for closed-loop or accurate state estimation for open-loop control,</li>
+                        <li>identify novel state estimation theories and algorithms for robots with parts made of soft
+                            materials,</li>
+                        <li>discuss state estimation in the context of applications in soft robotics, human-robot
+                            interaction, or wearable devices,</li>
+                        <li>demonstrate real-time state estimation with limited precision for closed-loop or accurate
+                            state estimation for open-loop control,</li>
                         <li>describe novel integrated hard- and software prototypes of proprioceptive soft robots,</li>
-                        <li>review and benchmark various methods proposed by different communities (e.g., robotics, HCI, HRI) with the ultimate goal to enhance the mutual understanding of challenges and opportunities related to this workshop.</li>
+                        <li>review and benchmark various methods proposed by different communities (e.g., robotics, HCI,
+                            HRI) with the ultimate goal to enhance the mutual understanding of challenges and
+                            opportunities related to this workshop.</li>
                     </ul>
-                    <br/>
+                    <br />
                     <h3 style="text-align: center;">Important Dates</h3>
-                    <br/>
-                    <p style="text-align: center;">TBD</p>
-                    <br/>
+                    <br />
+                    <div style="width: 100%;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <b>Extended Abstract Submission:</b>
+                            <p> August 31, 2021, 5PM eastern
+                                time.
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <b>Extended Abstract Acceptance:</b>
+                            <p> September 07, 2021, 5PM eastern
+                                time.
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <b>Final Version Submission:</b>
+                            <p> September 21, 2021, 5PM eastern time.
+                            </p>
+                        </div>
+                        <br />
+                        <div style="display: flex; justify-content: space-between;">
+                            <b>Special Issue (Full Manuscript) Submission:</b>
+                            <p> September 31, 2021,
+                                5PM
+                                eastern time.
+                            </p>
+                        </div>
+                    </div>
+                    <br />
                     <h3 style="text-align: center;">Associated Special Issue</h3>
-                    <br/>
-                    <p>The organizers are currently guest editing a special issue on <a href="https://www.frontiersin.org/research-topics/19049/soft-robot-state-estimation" style="font-weight: bold;">the same research topic </a>. The potential authors would
-                        also be invited to participate in this workshop. Authors of the selected abstracts would be invited to submit the full version of their works to this special issue.</p>
+                    <br />
+                    <p>The organizers are currently guest editing a special issue on <a
+                            href="https://www.frontiersin.org/research-topics/19049/soft-robot-state-estimation"
+                            style="font-weight: bold;">the same research topic </a>. The potential authors would
+                        also be invited to participate in this workshop. Authors of the selected abstracts would be
+                        invited to submit the full version of their works to this special issue.</p>
                 </article>
             </div>
         </div>
@@ -329,7 +450,8 @@
                             <li>Self-calibration for soft robot state estimation</li>
                             <li>Soft robot co-design for state estimation and closed-loop control</li>
                             <li>Perspectives on challenges and open questions</li>
-                            <li>Benchmarking experiments for comparing sensing techniques and state estimation algorithms</li>
+                            <li>Benchmarking experiments for comparing sensing techniques and state estimation
+                                algorithms</li>
                         </ul>
                     </div>
 
@@ -359,7 +481,8 @@
                 </header>
                 <div class="row" style="margin-left: 0px;">
                     <article class="col-3 col-12-mobile special">
-                        <a href="https://engineering.nyu.edu/faculty/chen-feng" class="image featured"><img src="images/Chen Feng.jpeg" alt="" /></a>
+                        <a href="https://engineering.nyu.edu/faculty/chen-feng" class="image featured"><img
+                                src="images/Chen Feng.jpeg" alt="" /></a>
                         <header>
                             <h3><a href="https://engineering.nyu.edu/faculty/chen-feng">Chen Feng</a></h3>
                             <h3><a href="https://engineering.nyu.edu/faculty/chen-feng">NYU</a></h3>
@@ -369,7 +492,8 @@
                         </p>
                     </article>
                     <article class="col-3 col-12-mobile special">
-                        <a href="https://www.ri.cmu.edu/ri-faculty/wenzhen-yuan/" class="image featured"><img src="images/Wenzhen Yuan.jpeg" alt="" /></a>
+                        <a href="https://www.ri.cmu.edu/ri-faculty/wenzhen-yuan/" class="image featured"><img
+                                src="images/Wenzhen Yuan.jpeg" alt="" /></a>
                         <header>
                             <h3><a href="https://www.ri.cmu.edu/ri-faculty/wenzhen-yuan/">Wenzhen Yuan</a></h3>
                             <h3><a href="https://www.ri.cmu.edu/ri-faculty/wenzhen-yuan/">CMU</a></h3>
@@ -379,17 +503,20 @@
                         </p>
                     </article>
                     <article class="col-3 col-12-mobile special">
-                        <a href="https://www.me.tsinghua.edu.cn/en/info/1067/1431.htm" class="image featured"><img src="images/Huichan Zhao.jpeg" alt="" /></a>
+                        <a href="https://www.me.tsinghua.edu.cn/en/info/1067/1431.htm" class="image featured"><img
+                                src="images/Huichan Zhao.jpeg" alt="" /></a>
                         <header>
                             <h3><a href="https://www.me.tsinghua.edu.cn/en/info/1067/1431.htm">Huichan Zhao</a></h3>
-                            <h3><a href="https://www.me.tsinghua.edu.cn/en/info/1067/1431.htm">Tsinghua University</a></h3>
+                            <h3><a href="https://www.me.tsinghua.edu.cn/en/info/1067/1431.htm">Tsinghua University</a>
+                            </h3>
                         </header>
                         <p style="text-align: center;">
                             zhaohuichan@mail.tsinghua.edu.cn
                         </p>
                     </article>
                     <article class="col-3 col-12-mobile special">
-                        <a href="https://www.baecher.info/" class="image featured"><img src="images/Moritz Bächer.jpeg" alt="" /></a>
+                        <a href="https://www.baecher.info/" class="image featured"><img src="images/Moritz Bächer.jpeg"
+                                alt="" /></a>
                         <header>
                             <h3><a href="https://www.baecher.info/">Moritz Bächer</a></h3>
                             <h3><a href="https://www.baecher.info/">Disney Research</a></h3>
@@ -403,8 +530,6 @@
 
         </div>
 
-
-
     </div>
 
     <!-- Footer -->
@@ -413,9 +538,20 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Copyright -->
+                    <div style="width: 60%; margin-left: auto; margin-right: auto;">
+                        <script type="text/javascript"
+                            src="//ra.revolvermaps.com/0/0/7.js?i=5agyhgbtwzj&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;sx=0&amp;rs=100"
+                            async="async"></script>
+                    </div>
                     <div class="copyright">
                         <ul class="menu">
-                            <li><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</li>
+                            <li><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+                                        alt="Creative Commons License" style="border-width:0"
+                                        src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is
+                                licensed under a <a rel="license"
+                                    href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+                                    International License</a>.</li>
+                            <li>Powered by @html5up. Presented by <a href="https://eveshi.com">@Eve Shi</a></li>
                         </ul>
                     </div>
 
@@ -436,6 +572,36 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 
