@@ -2330,6 +2330,8 @@ body.homepage.is-preload #header:after {
   background-color: dodgerblue;
   color: #fff;
   background-size: cover;
+  height: 240px;
+
 }
 
 #footer .container {
@@ -2376,7 +2378,8 @@ body.homepage.is-preload #header:after {
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.8em;
-  cursor: default;
+  cursor: default
+
 }
 
 #footer .copyright a {
