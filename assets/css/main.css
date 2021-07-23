@@ -2326,7 +2326,6 @@ body.homepage.is-preload #header:after {
   position: relative;
   overflow: hidden;
   padding: 6em 0 6em 0;
-  height: 200px;
   background: url('../../images/robot.jpg') no-repeat center top;
   background-color: dodgerblue;
   color: #fff;
