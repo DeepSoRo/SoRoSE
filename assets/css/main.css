@@ -2992,14 +2992,22 @@ body.homepage.is-preload #header:after {
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-  max-height: 400px;
+  height: 300px;
   position: relative;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
