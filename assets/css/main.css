@@ -3143,6 +3143,7 @@ body.homepage.is-preload #header:after {
   border-color: inherit;
   text-align: left;
   vertical-align: middle;
+  padding-left: 10px;
 }
 
 .tg .tg-a0ej {
