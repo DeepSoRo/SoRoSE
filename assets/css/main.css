@@ -3152,3 +3152,24 @@ body.homepage.is-preload #header:after {
   text-align: center;
   vertical-align: middle;
 }
+
+.float-parent {
+  position: relative;
+}
+
+.float {
+  position: absolute;
+  top: 16px;
+  display: none;
+}
+
+.float-parent:hover > .float {
+  display: block;
+  background: white;
+  border: 2px solid;
+  color: black;
+  padding: 8px 16px;
+  width: 420px;
+  z-index: 100;
+  border-radius: 10px;
+}
